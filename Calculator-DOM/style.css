@@ -1,0 +1,299 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  outline:none;
+}
+/**  Body  **/
+body{
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    margin: 0;
+    flex-flow: column wrap;
+    /* background-color:#fff; */
+}
+
+
+/**  Container  **/
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/**  Calculator  **/
+.calculator{
+    background-color: #e3e9ec;
+    padding: 15px;
+    border-radius: 32px;
+    box-shadow: inset 5px 5px 12px #fff,
+                      5px 5px 12px rgba(0,0,0,.16);
+    display: grid;
+    grid-template-columns: repeat(4 , 68px) ;           
+}
+
+/**   Input --> Toggle  **/
+
+body.dark{
+    background-color: #292c35;
+    /* transition: transform 0.2s linear; */
+}
+
+
+/**Checkbox**/
+.checkbox{
+    opacity: 0;
+    position: absolute;
+}
+
+
+/**Label**/
+label{
+    background-color: #111;
+    border-radius: 50px;
+    cursor:pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 5px;
+    height: 26px;
+    width: 50px;
+    transform: skale(1.5);
+}
+
+
+/**ball**/
+
+label .ball{
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 22px;
+    width: 22px;
+    margin-top: -1px;
+    margin-left: -3px;
+    transform: translate(0px);
+    transition: transform 0.2s linear;
+}
+.checkbox:checked + .label .ball{
+    transform: translateX(24px);
+}
+/** icon  **/
+
+.fa-moon{
+    color: #f1c40f;
+} 
+
+.fa-sun{
+    color:#f39c12;
+}
+
+body > div > label{
+    margin-left: -190px;
+    margin-top:-140px;
+    padding:2px;
+}
+body > div > label > div{
+    margin-top:133px;
+    margin-left: 52px;
+}
+#checkbox{
+    background-color:#000;
+    margin-left:-200px;
+}
+
+/**   Input --> output  **/
+
+input{
+    grid-column: span;
+    height: 75px;
+    width: 250ppx;
+    background-color: #e3e9ec;
+    box-shadow: inset 5px 5px 12px #fff,
+                    5px 5px 12px rgba(0,0,0,.16);
+    border: none;
+    border-radius: 32px;
+    font-size :18px;
+    text-align:end;
+    margin: auto ;
+    margin : 40px 30px;
+    margin-bottom: -300px;
+    padding:20px;
+}
+
+/**   buttons   **/
+
+button{
+    height:48px;
+    width:48px;
+    background-color: #fff;
+    box-shadow: inset -5px -5px 12px #fff,
+                      5px 5px 12px rgba(0,0,0,.16);
+    border: none;
+    border-radius: 50%;
+    margin: 8px;
+    font-size: 16px;
+}
+button:hover{
+    background-color: #f4f4f4;
+    transition: 0.5s;
+}
+
+/**   Equal-btn   **/
+
+.equal{
+    width: 117px;
+    border-radius: 40px;
+    background-color: #f4f4f4;
+    box-shadow: inset -5px -5px 12px #fff,
+                      5px 5px 12px rgba(0,0,0,.16);
+}
+
+#output{
+    margin:  50px 50px;
+    width: 30%;
+}
+
+body > button{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
+
+body > button:nth-child(5){
+    margin-left: -340px;
+    
+}
+body > button:nth-child(6){
+   margin-top: -75px;
+   margin-bottom: 20px;
+   margin-left: -120px;
+}
+body > button:nth-child(7){
+    margin-top: -95px;
+    margin-bottom:20px;
+    margin-left: 95px;
+}
+body > button:nth-child(8){
+    margin-top: -95px;
+    margin-left: 330px;
+}
+body > button:nth-child(9){
+    margin-left: -340px;
+    margin-top: 12px;
+}
+body > button:nth-child(10){
+    margin-left: -120px;
+    margin-top: -75px;
+}
+body > button:nth-child(11){
+    margin-left: 95px;
+    margin-top: -75px
+}
+body > button:nth-child(12){
+    margin-left: 330px;
+    margin-top: -75px;
+}
+body > button:nth-child(13){
+    margin-left: -340px;
+    margin-top: 12px;
+}
+body > button:nth-child(14){
+    margin-left: -120px;
+    margin-top: -75px;
+}
+body > button:nth-child(15){
+    margin-left: 95px;
+    margin-top: -75px
+}
+body > button:nth-child(16){
+    margin-left: 330px;
+    margin-top: -75px;
+}
+body > button:nth-child(17){
+    margin-left: -340px;
+    margin-top: 12px;
+}
+body > button:nth-child(18){
+    margin-left: -120px;
+    margin-top: -75px;
+}
+body > button:nth-child(19){
+    margin-left: 95px;
+    margin-top: -75px
+}
+body > button:nth-child(20){
+    margin-left: 330px;
+    margin-top: -75px;
+}
+body > button:nth-child(21){
+    margin-left: -340px;
+    margin-top: 12px;
+}
+body > button:nth-child(22){
+    margin-left: -120px;
+    margin-top: -75px;
+}
+body > button:nth-child(23){
+    margin-left: 210px;
+    margin-top: -75px;
+    width: 200px;
+}
+
+@media (min-width:320px) and (max-width: 374px){
+    html{
+        width:100%;
+    }
+    body{
+        width: 100%;
+    }
+    #output{
+        width: 100%;
+        margin-left: 20px;
+    }
+    button{
+        width: 100%;
+    }
+}
+@media (min-width: 375px) and (max-width: 424px){
+    html{
+        max-width: fit-content;
+    }
+    body{
+        width:100%;
+    }
+    #output{
+        width:364px;
+        height: 64px;
+    }
+}
+@media (min-width: 425px) and (max-width:767px){
+    #output{
+        width:60%;
+    }
+}
+@media (min-width:432px) and (max-width:712px){
+    #output{
+        width:70%;
+        margin:10px;
+    }
+}
+@media (min-width:768px) and (max-width:1023px){
+
+    #output{
+        width:58%;
+    }
+}
+@media (min-width:1024px) and (max-width:1439px){
+    #output{
+        width:45%;
+    }
+}
